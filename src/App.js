@@ -1,52 +1,19 @@
-import AddIcon from '@mui/icons-material/Add'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
-import Fab from '@mui/material/Fab'
-import IconButton from '@mui/material/IconButton'
-import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
+import Hero from 'Components/Hero'
 
 export default function App() {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6" sx={{ flexGrow: 1 }}>
-              cra-template-mui
-            </Typography>
-            <IconButton
-              size="large"
-              edge="end"
-              color="inherit"
-              onClick={() => window.open('https://github.com/tanabee/cra-template-mui', '_blank')}
-            >
-              <GitHubIcon />
-            </IconButton>
-          </Toolbar>
-        </AppBar>
-      </Box>
-      <Box sx={{ p: 3 }}>
-        <Typography variant="h1">h1. Heading</Typography>
-        <Typography variant="h2">h2. Heading</Typography>
-        <Typography variant="h3">h3. Heading</Typography>
-        <Typography variant="h4">h4. Heading</Typography>
-        <Typography variant="h5">h5. Heading</Typography>
-        <Typography variant="h6">h6. Heading</Typography>
-        <Typography variant="body1">body1. text</Typography>
-        <Typography variant="body2">body2. text</Typography>
-      </Box>
-      <Fab
-        color="secondary"
-        sx={{
-          position: 'fixed',
-          right: ({ spacing }) => spacing(3),
-          bottom: ({ spacing }) => spacing(3),
-        }}
-      >
-        <AddIcon />
-      </Fab>
+      <Hero />
+      <main>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere enim arcu, eu
+        fringilla leo congue in. Quisque et sem interdum, porta nisi quis, viverra lorem. Vestibulum
+        molestie leo at ante facilisis accumsan. Etiam dignissim neque sollicitudin risus
+        pellentesque, vitae ornare ipsum vestibulum. Maecenas at volutpat eros. Donec commodo mollis
+        risus, eget dictum lacus rhoncus vitae. Nunc molestie risus et urna ultrices rhoncus.
+        Praesent ac consectetur ex. Nunc lobortis tortor ac pharetra porta. Duis blandit sit amet ex
+        ac cursus. Sed gravida odio id enim rutrum, non gravida felis lacinia. Sed convallis mi quis
+        nulla commodo sagittis.
+      </main>
     </>
   )
 }

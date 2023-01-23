@@ -1,23 +1,29 @@
 import CssBaseline from '@mui/material/CssBaseline'
-import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles'
+import {
+  responsiveFontSizes,
+  createTheme,
+  ThemeProvider as MuiThemeProvider,
+} from '@mui/material/styles'
 import '@fontsource/viga'
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
+import '@fontsource/roboto/700.css'
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     type: 'dark',
     primary: {
       main: '#3E60B8',
-      contrastText: '#F7F7F7',
     },
     secondary: {
-      main: '#F0B64F',
-      contrastText: '#F7F7F7',
+      main: '#f7c31a',
     },
     text: {
       primary: '#F7F7F7',
     },
     background: {
-      default: '#292D49',
+      default: '#170250',
       paper: '#303556',
     },
     error: {
@@ -39,19 +45,17 @@ const theme = createTheme({
       fontSize: '8.5rem',
     },
     h2: {
-      fontSize: '4rem',
       fontWeight: 700,
     },
     h3: {
-      fontSize: '1.25rem',
       fontWeight: 700,
       textTransform: 'uppercase',
     },
-    h4: {
-      fontSize: '1.15rem',
-    },
+    h4: {},
   },
 })
+
+theme = responsiveFontSizes(theme)
 
 export default function ThemeProvider({ children }) {
   return (
