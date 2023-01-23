@@ -1,45 +1,54 @@
-import { blue, pink, grey } from '@mui/material/colors'
 import CssBaseline from '@mui/material/CssBaseline'
 import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles'
+import '@fontsource/viga'
 
 const theme = createTheme({
   palette: {
-    primary: blue,
-    secondary: pink,
+    type: 'dark',
+    primary: {
+      main: '#3E60B8',
+      contrastText: '#F7F7F7',
+    },
+    secondary: {
+      main: '#F0B64F',
+      contrastText: '#F7F7F7',
+    },
     text: {
-      primary: grey[900],
-      secondary: grey[700],
+      primary: '#F7F7F7',
     },
     background: {
-      default: '#eee',
-      paper: '#fff',
+      default: '#292D49',
+      paper: '#303556',
     },
-    divider: grey[300],
+    error: {
+      main: '#f44336',
+    },
+    warning: {
+      main: '#c68739',
+    },
+    info: {
+      main: '#252d41',
+    },
+    success: {
+      main: '#489771',
+    },
   },
-  spacing: 8,
   typography: {
-    fontFamily: [
-      '"Hiragino Sans"',
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      'Helvetica',
-      'Arial',
-      'sans-serif',
-    ].join(','),
-  },
-  components: {
-    MuiButton: {
-      defaultProps: {
-        disableElevation: true,
-      },
-      styleOverrides: {},
+    h1: {
+      fontFamily: "'Viga', sans-serif",
+      fontSize: '8.5rem',
     },
-    MuiTextField: {
-      defaultProps: {
-        variant: 'filled',
-      },
+    h2: {
+      fontSize: '4rem',
+      fontWeight: 700,
+    },
+    h3: {
+      fontSize: '1.25rem',
+      fontWeight: 700,
+      textTransform: 'uppercase',
+    },
+    h4: {
+      fontSize: '1.15rem',
     },
   },
 })
