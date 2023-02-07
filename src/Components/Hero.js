@@ -7,6 +7,12 @@ import React, { useState, useEffect } from 'react'
 import useTimeout from 'useTimeout'
 
 const Hero = () => {
+  //Content and styling
+  const title = "Hi, I'm Zuza"
+  const subtitle = 'Front-End Developer'
+
+  const textShadow = '.08em .08em 0 #3E60B8'
+
   //Smooth scrolling on CTA
   const handleClickScroll = () => {
     const main = document.querySelector('main')
@@ -89,12 +95,6 @@ const Hero = () => {
       </Grid>
     )
   }
-
-  //Content and styling
-  const title = "Hi, I'm Zuza"
-  const subtitle = 'Front-End Developer'
-
-  const textShadow = '.08em .08em 0 #3E60B8'
 
   return (
     <Grid
