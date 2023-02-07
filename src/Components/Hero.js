@@ -21,12 +21,12 @@ const Hero = () => {
     const toggleHover = () => setHovered(!hovered)
     return (
       <IconButton
-        className={hovered ? '' : 'animate__animated animate__bounce animate__infinite'}
+        className={!hovered && 'animate__animated animate__bounce animate__infinite'}
         onMouseEnter={toggleHover}
         onMouseLeave={toggleHover}
+        onClick={handleClickScroll}
         variant="outlined"
         color="secondary"
-        onClick={handleClickScroll}
       >
         <KeyboardDoubleArrowDownIcon />
       </IconButton>
@@ -85,7 +85,7 @@ const Hero = () => {
           flex: 1,
         }}
       >
-        {hasTimeElapsed ? content : ''}
+        {hasTimeElapsed && content}
       </Grid>
     )
   }

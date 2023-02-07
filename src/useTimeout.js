@@ -15,3 +15,5 @@ export default function useTimeout(callback, delay) {
   }, [delay])
   return timeoutRef
 }
+
+//credit: https://www.joshwcomeau.com/snippets/react-hooks/use-timeout/
