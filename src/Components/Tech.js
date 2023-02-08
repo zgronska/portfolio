@@ -1,7 +1,7 @@
 import React from 'react'
-import { Section } from './Section'
+import { Section } from './Utilities/Section'
 import HeaderBg from '../Assets/bg-2.jpg'
-import { Typography, Stack } from '@mui/material'
+import { Typography, Stack, Alert } from '@mui/material'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import TechItem from './TechItem'
 
@@ -82,6 +82,11 @@ const Tech = () => {
       >
         {stack}
       </Stack>
+      <AnimationOnScroll animateIn="animate__fadeInUp">
+        <Alert severity="info">
+          Your company uses a different stack? Worry not! I love to learn.
+        </Alert>
+      </AnimationOnScroll>
     </Section>
   )
 }

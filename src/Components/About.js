@@ -1,11 +1,11 @@
 import React from 'react'
-import { Section } from './Section.js'
+import { Section } from './Utilities/Section.js'
 import { Typography, Box } from '@mui/material'
 import Pic from '../Assets/selfie.svg'
 import Image from 'mui-image'
 import 'animate.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
-import { Highlight } from './Highlight.js'
+import { Highlight } from './Utilities/Highlight.js'
 
 const About = () => {
   return (

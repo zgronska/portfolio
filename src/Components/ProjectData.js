@@ -1,0 +1,42 @@
+export const projectdata = [
+  {
+    title: 'My portfolio',
+    description: 'This portfolio! The biggest flex.',
+    tags: ['JavaScript', 'React', 'Material UI', 'npm'],
+    image: 'portfolio.png',
+    code: 'https://github.com/zgronska/portfolio-v2',
+    live: 'https://zuza-gronska.netlify.app/',
+  },
+  {
+    title: 'Inspirational Quotes Generator',
+    description: 'Simple landing page generating inspirational quotes from the Quotable API.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'API'],
+    image: 'quotes.png',
+    code: 'https://github.com/zgronska/inspirational-quotes',
+    live: 'https://zgronska.github.io/inspirational-quotes/',
+  },
+  {
+    title: 'CoolBeans',
+    description: 'Landing page for a fictional cafe with various features and responsive design.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    image: 'coolbeans.png',
+    code: 'https://github.com/zgronska/top-landing-page',
+    live: 'https://zgronska.github.io/top-landing-page/',
+  },
+  {
+    title: 'Travel Journal',
+    description: 'Course project documenting my first steps with React.',
+    tags: ['React', 'CSS', 'JavaScript'],
+    image: 'traveljournal.png',
+    code: 'https://github.com/zgronska/travel-journal',
+    live: 'https://darling-duckanoo-f2e138.netlify.app/',
+  },
+  {
+    title: 'Password Generator',
+    description: 'JavaScript practice, with a funky dark mode toggle.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    image: 'passgen.png',
+    code: 'https://github.com/zgronska/password-generator',
+    live: 'https://zgronska.github.io/password-generator/',
+  },
+]

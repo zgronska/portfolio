@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon } from './Icon'
+import { Icon } from './Utilities/Icon'
 import { Typography, Stack } from '@mui/material'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
