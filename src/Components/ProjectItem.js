@@ -11,7 +11,7 @@ import {
   Stack,
   Grid,
 } from '@mui/material'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+
 import { stackdata } from './StackData'
 
 const ProjectItem = props => {
