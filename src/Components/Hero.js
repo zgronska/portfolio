@@ -1,10 +1,10 @@
-import { Grid, Typography, IconButton, Slide } from '@mui/material'
-import { TransitionGroup } from 'react-transition-group'
+import { Grid, Typography, IconButton } from '@mui/material'
+
 import HeaderBg from '../Assets/bg-1.jpg'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown'
 import 'animate.css'
-import React, { useState, useEffect } from 'react'
-import useTimeout from 'useTimeout'
+import React, { useState } from 'react'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Hero = () => {
   //Content and styling
@@ -39,63 +39,6 @@ const Hero = () => {
     )
   }
 
-  //Slide animation
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      console.log('This will be called after 2 seconds')
-    }, 2000)
-
-    return () => clearTimeout(timeout)
-  }, [])
-
-  function TextSlide() {
-    const [hasTimeElapsed, setHasTimeElapsed] = React.useState(false)
-
-    const content = (
-      <TransitionGroup>
-        <Slide direction="right" timeout={500}>
-          <Typography
-            variant="h1"
-            sx={{
-              textShadow: `${textShadow}`,
-            }}
-          >
-            {title}
-          </Typography>
-        </Slide>
-        <Slide direction="right" timeout={1000}>
-          <Typography
-            variant="h2"
-            color="secondary"
-            sx={{
-              textShadow: `${textShadow}`,
-            }}
-          >
-            {subtitle}
-          </Typography>
-        </Slide>
-      </TransitionGroup>
-    )
-
-    useTimeout(() => {
-      setHasTimeElapsed(true)
-    }, 1000)
-    return (
-      <Grid
-        item
-        container
-        alignItems="center"
-        justifyContent="center"
-        direction="column"
-        sx={{
-          flex: 1,
-        }}
-      >
-        {hasTimeElapsed && content}
-      </Grid>
-    )
-  }
-
   return (
     <Grid
       container
@@ -112,7 +55,38 @@ const Hero = () => {
       component={'header'}
       className="hero-section"
     >
-      <TextSlide />
+      <Grid
+        item
+        container
+        alignItems="center"
+        justifyContent="center"
+        direction="column"
+        sx={{
+          flex: 1,
+        }}
+      >
+        <AnimationOnScroll animateIn="animate__lightSpeedInLeft" animateOnce="true">
+          <Typography
+            variant="h1"
+            sx={{
+              textShadow: `${textShadow}`,
+            }}
+          >
+            {title}
+          </Typography>
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate__lightSpeedInLeft" animateOnce="true" delay={300}>
+          <Typography
+            variant="h2"
+            color="secondary"
+            sx={{
+              textShadow: `${textShadow}`,
+            }}
+          >
+            {subtitle}
+          </Typography>
+        </AnimationOnScroll>
+      </Grid>
 
       <Grid item>
         <ScrollBtn />

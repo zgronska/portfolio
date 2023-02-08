@@ -7,6 +7,7 @@
     "@emotion/styled": "^11.10.5",
     "@fontsource/roboto": "^4.5.8",
     "@fontsource/viga": "^4.5.9",
+    "@loadable/component": "^5.15.3",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.5",
     "animate.css": "^4.1.1",
@@ -14,6 +15,7 @@
     "react": "^18.2.0",
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-scripts": "5.0.1"
   },
   "scripts": {
