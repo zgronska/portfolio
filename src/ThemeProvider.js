@@ -24,19 +24,7 @@ let theme = createTheme({
     },
     background: {
       default: '#170250',
-      paper: '#303556',
-    },
-    error: {
-      main: '#f44336',
-    },
-    warning: {
-      main: '#c68739',
-    },
-    info: {
-      main: '#252d41',
-    },
-    success: {
-      main: '#489771',
+      paper: '#140C29',
     },
   },
   typography: {
@@ -51,7 +39,6 @@ let theme = createTheme({
       fontWeight: 700,
       textTransform: 'uppercase',
     },
-    h4: {},
   },
 })
 

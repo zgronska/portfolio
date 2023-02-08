@@ -12,10 +12,12 @@ export default function App() {
     <>
       <CssBaseline />
       <Hero />
-      <About />
-      <Tech />
-      <Projects />
-      <Contact />
+      <main>
+        <About />
+        <Tech />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
     </>
   )

@@ -10,6 +10,9 @@ import { Highlight } from './Utilities/Highlight.js'
 const About = () => {
   return (
     <Section
+      component="section"
+      className="about-section"
+      maxWidth="lg"
       sx={{
         display: 'flex',
         alignItems: 'center',

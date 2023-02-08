@@ -8,4 +8,5 @@ export const Section = styled(Box)({
   alignItems: 'center',
   justifyContent: 'center',
   flexDirection: 'column',
+  margin: 'auto',
 })
