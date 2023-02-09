@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section } from './Utilities/Section.js'
+import Section from './Utilities/Section.js'
 import { Typography, Box } from '@mui/material'
 import Pic from '../Assets/selfie.svg'
 import Image from 'mui-image'
@@ -10,13 +10,8 @@ import { Highlight } from './Utilities/Highlight.js'
 const About = () => {
   return (
     <Section
-      component="section"
-      className="about-section"
-      maxWidth="lg"
+      title="about"
       sx={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
         gap: 8,
         flexDirection: { xs: 'column', md: 'row' },
       }}
@@ -25,17 +20,15 @@ const About = () => {
         src={Pic}
         alt="An avatar of myself looking dapper"
         duration={500}
-        height="fit-content"
+        width={300}
         sx={{
           bgcolor: 'primary.main',
           borderRadius: '50%',
-          maxWidth: 300,
           border: 5,
           borderColor: 'secondary.main',
-          flexGrow: 1,
         }}
       />
-      <Box>
+      <Box maxWidth="sm">
         <AnimationOnScroll animateIn="animate__fadeInUp">
           <Typography variant="h3" color="secondary" gutterBottom>
             Nice to meet you!
@@ -48,7 +41,7 @@ const About = () => {
             specifically in the music and video game industries, but I've decided to swap Instagram
             campaigns for cozy VSCode sessions and take a wild leap into{' '}
             <Highlight color="secondary">Front-End Development</Highlight>. I'm currently on a
-            self-study mission to to reach the pinnacle of dev greatness, or at least be the best in
+            self-study mission to reach the pinnacle of dev greatness, or at least be the best in
             the Netherlands... no big deal! I'm on the lookout for{' '}
             <Highlight color="secondary">junior roles or traineeships</Highlight> where I can put my
             skills to the test and take over the world, one app at a time.

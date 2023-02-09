@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section } from './Utilities/Section'
+import Section from './Utilities/Section'
 import HeaderBg from '../Assets/bg-2.jpg'
 import { Typography, Stack, Alert, Container } from '@mui/material'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
@@ -13,18 +13,13 @@ const Tech = () => {
 
   return (
     <Section
-      component="section"
-      className="tech-section"
+      title="tech"
+      heading="Tech I use"
       sx={{
         background: `linear-gradient(180deg, rgba(23, 2, 80, 1) 0%, rgba(23, 2, 80, .2) 50%, rgba(23, 2, 80, 1) 100%), url(${HeaderBg}) no-repeat center`,
         backgroundSize: 'cover',
       }}
     >
-      <AnimationOnScroll animateIn="animate__fadeInUp">
-        <Typography variant="h3" color="secondary" align="center" gutterBottom>
-          Tech I use
-        </Typography>
-      </AnimationOnScroll>
       <Container sx={{ py: 8 }} maxWidth="md">
         <Stack
           m="auto"
