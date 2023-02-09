@@ -6,6 +6,7 @@ import Projects from 'Components/Projects'
 import Contact from 'Components/Contact'
 import Footer from 'Components/Footer'
 import CssBaseline from '@mui/material/CssBaseline'
+import Menu from 'Components/Utilities/Menu'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <Menu />
     </>
   )
 }

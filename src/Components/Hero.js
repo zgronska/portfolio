@@ -1,5 +1,5 @@
 import { Grid, Typography, IconButton } from '@mui/material'
-
+import handleClickScroll from './Utilities/HandleClickScroll'
 import HeaderBg from '../Assets/bg-1.jpg'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown'
 import 'animate.css'
@@ -7,19 +7,7 @@ import React, { useState } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Hero = () => {
-  //Content and styling
-  const title = "Hi, I'm Zuza"
-  const subtitle = 'Front-End Developer'
-
   const textShadow = '.08em .08em 0 #3E60B8'
-
-  //Smooth scrolling on CTA
-  const handleClickScroll = () => {
-    const main = document.querySelector('main')
-    if (main) {
-      main.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
 
   //Button animation stop
   function ScrollBtn() {
@@ -30,7 +18,7 @@ const Hero = () => {
         className={!hovered && 'animate__animated animate__bounce animate__infinite'}
         onMouseEnter={toggleHover}
         onMouseLeave={toggleHover}
-        onClick={handleClickScroll}
+        onClick={() => handleClickScroll(`main`)}
         variant="outlined"
         color="secondary"
       >
@@ -72,7 +60,7 @@ const Hero = () => {
               textShadow: `${textShadow}`,
             }}
           >
-            {title}
+            Hi, I'm Zuza
           </Typography>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__lightSpeedInLeft" animateOnce="true" delay={300}>
@@ -83,7 +71,7 @@ const Hero = () => {
               textShadow: `${textShadow}`,
             }}
           >
-            {subtitle}
+            Front-End Developer
           </Typography>
         </AnimationOnScroll>
       </Grid>
