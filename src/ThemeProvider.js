@@ -12,19 +12,16 @@ import '@fontsource/roboto/700.css'
 
 let theme = createTheme({
   palette: {
-    type: 'dark',
+    mode: 'dark',
     primary: {
       main: '#3E60B8',
     },
     secondary: {
       main: '#f7c31a',
     },
-    text: {
-      primary: '#F7F7F7',
-    },
     background: {
       default: '#170250',
-      paper: '#140C29',
+      paper: '#1E0369',
     },
   },
   typography: {
