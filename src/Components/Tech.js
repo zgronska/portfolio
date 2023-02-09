@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from './Utilities/Section'
 import HeaderBg from '../Assets/bg-2.jpg'
-import { Typography, Stack, Alert, Container } from '@mui/material'
+import { Stack, Alert, Container } from '@mui/material'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import TechItem from './TechItem'
 import { stackdata } from './StackData'
