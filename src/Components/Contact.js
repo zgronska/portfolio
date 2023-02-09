@@ -26,7 +26,8 @@ const Contact = () => {
 
   const handleSubmit = e => {
     const formdata = {
-      name: `${firstName} ${lastName}`,
+      firstname: firstName,
+      lastname: lastName,
       email: email,
       content: content,
     }
@@ -64,6 +65,7 @@ const Contact = () => {
       <Grid container spacing={2} maxWidth="sm" component="form" onSubmit={handleSubmit}>
         <Grid item xs={6}>
           <TextField
+            name="firstname"
             variant="filled"
             color="secondary"
             required
@@ -76,6 +78,7 @@ const Contact = () => {
         </Grid>
         <Grid item xs={6}>
           <TextField
+            name="lastname"
             variant="filled"
             color="secondary"
             required
@@ -88,6 +91,7 @@ const Contact = () => {
         </Grid>
         <Grid item xs={12}>
           <TextField
+            name="email"
             variant="filled"
             color="secondary"
             required
@@ -101,6 +105,7 @@ const Contact = () => {
 
         <Grid item xs={12}>
           <TextField
+            name="content"
             variant="filled"
             color="secondary"
             required
