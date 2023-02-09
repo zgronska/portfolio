@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Section from './Utilities/Section'
 import { Grid, TextField, Button, Snackbar, Alert } from '@mui/material'
 import HeaderBg from '../Assets/bg-3.jpg'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Contact = () => {
   const [firstName, setFirstName] = useState('')
@@ -62,77 +63,79 @@ const Contact = () => {
         backgroundSize: 'cover',
       }}
     >
-      <Grid container spacing={2} maxWidth="sm" component="form" onSubmit={handleSubmit}>
-        <Grid item xs={6}>
-          <TextField
-            name="firstname"
-            variant="filled"
-            color="secondary"
-            required
-            type="text"
-            onChange={e => setFirstName(e.target.value)}
-            value={firstName}
-            sx={{ width: '100%' }}
-            label="First name"
-          />
-        </Grid>
-        <Grid item xs={6}>
-          <TextField
-            name="lastname"
-            variant="filled"
-            color="secondary"
-            required
-            type="text"
-            onChange={e => setLastName(e.target.value)}
-            value={lastName}
-            sx={{ width: '100%' }}
-            label="Last name"
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <TextField
-            name="email"
-            variant="filled"
-            color="secondary"
-            required
-            type="email"
-            onChange={e => setEmail(e.target.value)}
-            value={email}
-            sx={{ width: '100%' }}
-            label="Email"
-          />
-        </Grid>
-
-        <Grid item xs={12}>
-          <TextField
-            name="content"
-            variant="filled"
-            color="secondary"
-            required
-            onChange={e => setContent(e.target.value)}
-            value={content}
-            sx={{ width: '100%' }}
-            multiline
-            rows={4}
-            label="Message"
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <Button type="submit" sx={{ width: '100%' }} variant="contained" color="secondary">
-            Send Message
-          </Button>
-
-          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-            <Alert
-              onClose={handleClose}
-              severity={hasErrors ? 'error' : 'success'}
+      <AnimationOnScroll animateIn="animate__fadeInUp">
+        <Grid container spacing={2} maxWidth="sm" component="form" onSubmit={handleSubmit}>
+          <Grid item xs={6}>
+            <TextField
+              name="firstname"
+              variant="filled"
+              color="secondary"
+              required
+              type="text"
+              onChange={e => setFirstName(e.target.value)}
+              value={firstName}
               sx={{ width: '100%' }}
-            >
-              {hasErrors ? 'Error detected!' : 'Thanks for your message!'}
-            </Alert>
-          </Snackbar>
+              label="First name"
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <TextField
+              name="lastname"
+              variant="filled"
+              color="secondary"
+              required
+              type="text"
+              onChange={e => setLastName(e.target.value)}
+              value={lastName}
+              sx={{ width: '100%' }}
+              label="Last name"
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              name="email"
+              variant="filled"
+              color="secondary"
+              required
+              type="email"
+              onChange={e => setEmail(e.target.value)}
+              value={email}
+              sx={{ width: '100%' }}
+              label="Email"
+            />
+          </Grid>
+
+          <Grid item xs={12}>
+            <TextField
+              name="content"
+              variant="filled"
+              color="secondary"
+              required
+              onChange={e => setContent(e.target.value)}
+              value={content}
+              sx={{ width: '100%' }}
+              multiline
+              rows={4}
+              label="Message"
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <Button type="submit" sx={{ width: '100%' }} variant="contained" color="secondary">
+              Send Message
+            </Button>
+
+            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+              <Alert
+                onClose={handleClose}
+                severity={hasErrors ? 'error' : 'success'}
+                sx={{ width: '100%' }}
+              >
+                {hasErrors ? 'Error detected!' : 'Thanks for your message!'}
+              </Alert>
+            </Snackbar>
+          </Grid>
         </Grid>
-      </Grid>
+      </AnimationOnScroll>
     </Section>
   )
 }
