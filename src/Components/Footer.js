@@ -1,5 +1,4 @@
 import { Paper, Container, Typography, Box, IconButton } from '@mui/material'
-import Grid from '@mui/material/Unstable_Grid2'
 import FavoriteBorderSharpIcon from '@mui/icons-material/FavoriteBorderSharp'
 import React from 'react'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
