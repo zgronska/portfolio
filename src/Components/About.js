@@ -28,7 +28,7 @@ const About = () => {
           borderColor: 'secondary.main',
         }}
       />
-      <Box maxWidth="sm">
+      <Box maxWidth="sm" textAlign={{ xs: 'center', md: 'left' }}>
         <AnimationOnScroll animateIn="animate__fadeInUp">
           <Typography variant="h3" color="secondary" gutterBottom>
             Nice to meet you!
