@@ -9,10 +9,10 @@ import CloseIcon from '@mui/icons-material/Close'
 import handleClickScroll from './HandleClickScroll'
 
 const actions = [
-  { icon: <AccountCircleIcon />, name: 'about' },
-  { icon: <TerminalIcon />, name: 'tech' },
-  { icon: <ColorLensIcon />, name: 'projects' },
   { icon: <EmailIcon />, name: 'contact' },
+  { icon: <ColorLensIcon />, name: 'projects' },
+  { icon: <TerminalIcon />, name: 'tech' },
+  { icon: <AccountCircleIcon />, name: 'about' },
 ]
 
 const MenuButton = () => {
