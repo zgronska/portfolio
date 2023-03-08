@@ -36,15 +36,14 @@ const About = () => {
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__fadeInUp">
           <Typography variant="body1" paragraph>
-            I'm an aspiring dev with roots in Poland, based in{' '}
-            <Highlight color="secondary">the Netherlands</Highlight>. My background is in marketing,
-            specifically in the music and video game industries, but I've decided to swap Instagram
-            campaigns for cozy VSCode sessions and take a wild leap into{' '}
-            <Highlight color="secondary">Front-End Development</Highlight>. I'm currently on a
-            self-study mission to reach the pinnacle of dev greatness, or at least be the best in
-            the Netherlands... no big deal! I'm on the lookout for{' '}
-            <Highlight color="secondary">junior roles or traineeships</Highlight> where I can put my
-            skills to the test and take over the world, one app at a time.
+            I'm a developer based in <Highlight color="secondary">the Netherlands</Highlight>, with
+            roots in Poland. My background is in marketing, specifically in the music and video game
+            industries, but I've decided to swap Instagram campaigns for cozy VSCode sessions and
+            take a wild leap into <Highlight color="secondary">Front-End Development</Highlight>.
+            I'm currently on a mission to reach the pinnacle of dev greatness, or at least be the
+            best in the Netherlands... no big deal! I'm on the lookout for{' '}
+            <Highlight color="secondary">junior roles</Highlight> where I can put my skills to the
+            test and take over the world, one app at a time.
             <br />
             <br />
             As a neurodivergent woman from a disadvantaged background, I'm especially passionate

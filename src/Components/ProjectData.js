@@ -19,12 +19,12 @@ export const projectdata = [
   },
   {
     id: 3,
-    title: 'CoolBeans',
-    description: 'Landing page for a fictional cafe with various features and responsive design.',
+    title: 'Pet Age Converter',
+    description: `This app provides a simple and easy way to convert your pet's age into human years.`,
     tags: ['HTML', 'CSS', 'JavaScript'],
-    image: 'coolbeans.png',
-    code: 'https://github.com/zgronska/top-landing-page',
-    live: 'https://zgronska.github.io/top-landing-page/',
+    image: 'converter.gif',
+    code: 'https://github.com/zgronska/unit-converter',
+    live: 'https://quiet-clafoutis-975c0a.netlify.app/',
   },
   {
     id: 4,
@@ -43,5 +43,14 @@ export const projectdata = [
     image: 'passgen.png',
     code: 'https://github.com/zgronska/password-generator',
     live: 'https://zgronska.github.io/password-generator/',
+  },
+  {
+    id: 6,
+    title: 'CoolBeans',
+    description: 'Landing page for a fictional cafe with various features and responsive design.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    image: 'coolbeans.png',
+    code: 'https://github.com/zgronska/top-landing-page',
+    live: 'https://zgronska.github.io/top-landing-page/',
   },
 ]
