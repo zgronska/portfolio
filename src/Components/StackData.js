@@ -8,40 +8,43 @@ export const stackdata = [
     icon: 'DiCss3',
   },
   {
+    name: 'Sass (SCSS)',
+    icon: 'DiSass',
+  },
+  {
     name: 'JavaScript',
     icon: 'DiJavascript',
   },
   {
-    name: 'React',
+    name: 'React.js',
     icon: 'DiReact',
   },
   {
-    name: 'Tailwind CSS',
-    icon: 'SiTailwindcss',
+    name: 'Vue.js',
+    icon: 'FaVuejs',
   },
   {
-    name: 'Material UI',
-    icon: 'SiMaterialui',
+    name: 'Vite',
+    icon: 'SiVite',
+  },
+  {
+    name: 'Webpack',
+    icon: 'SiWebpack',
   },
   {
     name: 'Figma',
     icon: 'SiFigma',
   },
   {
+    name: 'Git',
+    icon: 'FaGit',
+  },
+  {
     name: 'GitHub',
     icon: 'DiGithubAlt',
   },
   {
-    name: 'npm',
-    icon: 'DiNpm',
-  },
-  {
-    name: 'VSCode',
-    icon: 'DiVisualstudio',
-  },
-
-  {
-    name: 'Netlify',
-    icon: 'SiNetlify',
+    name: 'Shopware',
+    icon: 'FaShopware',
   },
 ]
