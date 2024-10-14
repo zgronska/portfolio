@@ -36,23 +36,16 @@ const About = () => {
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__fadeInUp">
           <Typography variant="body1" paragraph>
-            I'm a developer based in <Highlight color="secondary">the Netherlands</Highlight>, with
-            roots in Poland. My background is in marketing, specifically in the music and video game
-            industries, but I've decided to swap Instagram campaigns for cozy VSCode sessions and
-            take a wild leap into <Highlight color="secondary">Front-End Development</Highlight>.
-            I'm currently on a mission to reach the pinnacle of dev greatness, or at least be the
-            best in the Netherlands... no big deal! I'm on the lookout for{' '}
-            <Highlight color="secondary">junior roles</Highlight> where I can put my skills to the
-            test and take over the world, one app at a time.
-            <br />
-            <br />
+            I'm a passionate, completely self-taught front-end developer based in <Highlight color="secondary">Haarlem, the Netherlands</Highlight>. I spent my 20s working in marketing (specifically in the music & video games industries), but in the end I found myself pursuing my knack for coding. I currently work as a part of a small team at an e-commerce development agency.
+          </Typography>
+          <Typography variant="body1" paragraph>
             As a neurodivergent woman from a disadvantaged background, I'm especially passionate
             about breaking down barriers and{' '}
             <Highlight color="secondary">making a difference in the tech industry</Highlight>. I've
             got a keen eye for design and a love for experimenting with colours, which is why I find
-            <Highlight color="secondary"> styling UI (especially responsive design)</Highlight> to
+            <Highlight color="secondary"> UX/UI development</Highlight> to
             be one of my favourite parts of the job. So let's build something beautiful together and
-            make the internet a better place (or at least make it look pretty).
+            make the internet a better place <sup>(or at least make it look pretty)</sup>.
           </Typography>
         </AnimationOnScroll>
       </Box>
